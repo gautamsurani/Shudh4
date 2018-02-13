@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+
+    card_view:cardElevation="3dp"
+    card_view:cardMaxElevation="3dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:contentPadding="8dp">
+
+    <LinearLayout
+
+        android:id="@+id/lvListlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pImg"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/pTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="9"
+                    android:gravity="center|start"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="FRESHO"
+                    android:textColor="@color/colorText"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_cartdelete" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="11dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_marginRight="5dp"
+
+                    android:textColor="@color/colorText"
+                    android:textSize="13dp" />
+
+                <TextView
+
+
+                    android:layout_toRightOf="@+id/pPrice"
+                    android:id="@+id/lPrice"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="10dp" />
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="30% off"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:textColor="@color/red"
+                    android:textSize="11dp" />
+
+            </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pOptions"
+                        android:layout_width="121dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/option_custom"
+                        android:drawableEnd="@drawable/bottom"
+                        android:drawableRight="@drawable/bottom"
+                        android:ellipsize="end"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:paddingLeft="2dp"
+                        android:paddingStart="2dp"
+                        android:text="1 KG- Rs 20888"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/pOptionsSingleWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/colorText"
+                        android:textSize="13dp"
+                        android:text="1 KG"
+                        />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                        <TextView
+                            android:id="@+id/tvListSoldOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="5dp"
+                            android:padding="1dp"
+                            android:text="Sold Out"
+                            android:textColor="@color/red"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/pAddcartbtn"
+                            android:layout_width="35dp"
+
+                            android:layout_height="22dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="bottom"
+                            android:background="@color/colorAccent"
+                            android:text="Add"
+                            android:textColor="@color/cardview_light_background"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/addingitemLinear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/cartnumberbg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/minusItem"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+
+                                android:src="@drawable/minuslist" />
+
+                            <TextView
+                                android:id="@+id/itmQUAN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLength="2"
+                                android:textStyle="bold"
+
+                                android:paddingLeft="7dp"
+                                android:paddingRight="7dp"
+                                android:text="1"
+                                android:textColor="#ffffff"
+                                android:textSize="14dp" />
+
+                            <ImageView
+                                android:id="@+id/plusItem"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:src="@drawable/plustlist" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

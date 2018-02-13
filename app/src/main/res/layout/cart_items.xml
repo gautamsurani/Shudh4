@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f4">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/cartToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar_cart" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/topCountLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartToolBar"
+        android:background="@color/grey_soft"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/newcart"
+            android:tint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tvCartTotalItems"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" - "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvCartTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topCountLin"
+
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relProductlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvCartcharge">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvMyCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lvSpecialIntraction"
+                android:layout_marginTop="7dp" />
+
+            <LinearLayout
+                android:id="@+id/lvSpecialIntraction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="Special Intruction for your Order"
+                    android:textColor="@color/colorText"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etSpecialIntruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corner_refer"
+                    android:ems="4"
+                    android:focusableInTouchMode="true"
+                    android:gravity="top|left"
+                    android:hint="Special Intruction for your Order"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:textStyle="bold"
+                    android:textColorHint="@color/grey_dark"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="true"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvCartcharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lvBotbar"
+            android:layout_gravity="center"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:text="Get Free Delivery on order above \u20B9 349"
+            android:textColor="@color/colorText"
+            android:textSize="9dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lvBotbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/infoLin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="5.3"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="12dp"
+                    android:text="@string/Rs"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvShippingchargeInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="6dp"
+                    android:text="10 shipping charge"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/ic_info_outline_white_24dp" />
+                <!-- <TextView
+                     android:id="@+id/tvCartTotalItems"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:paddingLeft="15dp"
+                     android:drawableStart="@drawable/newcart"
+                     android:drawableLeft="@drawable/newcart"
+                     android:background="@color/colorPrimaryDark"
+                     android:gravity="start|center"
+                     android:drawablePadding="5dp"
+
+                     android:maxLines="2"
+                     android:textColor="#ffffff"
+                     android:textSize="14dp" />
+                 <TextView
+
+                     android:gravity="start|center"
+                     android:background="@color/colorPrimaryDark"
+                     android:layout_width="wrap_content"
+                     android:text=" - "
+                     android:textColor="#ffffff"
+                     android:textSize="14dp"
+                     android:layout_height="match_parent" />
+                 <TextView
+                     android:id="@+id/tvCartTotalAmount"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:maxLines="2"
+                     android:background="@color/colorPrimaryDark"
+                     android:gravity="start|center"
+                     android:drawablePadding="5dp"
+
+                     android:textColor="#ffffff"
+                     android:textSize="14dp" />-->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/placeOrderBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.7"
+                android:background="@color/colorPrimary"
+                android:text="Place Order"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_cart_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your cart is empty"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/circular_progress"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+</RelativeLayout>
+

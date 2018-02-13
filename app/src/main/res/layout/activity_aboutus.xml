@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrolltext"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingBottom="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/shethinfodetail"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/imgAboutUsbanner" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/material_grey_800"
+                    android:id="@+id/tvAboutusline" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/relsocialmedia"
+                 android:layout_below="@+id/shethinfodetail"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvfollows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow us"
+                    android:textSize="19dp"
+                    android:textColor="#000"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/maincontainer"
+                    android:layout_below="@+id/tvfollows"
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/sharewp"
+                        android:orientation="horizontal"
+                        android:background="#fff"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/viewfb"
+                            android:layout_width="50dp"
+
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:src="@drawable/facebook" />
+
+
+                        <ImageView
+                            android:id="@+id/viewgplus"
+                            android:layout_width="50dp"
+                            android:layout_toRightOf="@+id/viewfb"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:src="@drawable/googleplus"
+                            />
+
+                        <ImageView
+                            android:id="@+id/viewin"
+                            android:layout_width="50dp"
+                            android:layout_toRightOf="@+id/viewgplus"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:src="@drawable/in" />
+
+                        <ImageView
+                            android:id="@+id/viewinstagram"
+                            android:layout_width="50dp"
+                            android:layout_toRightOf="@+id/viewin"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:src="@drawable/instagram"
+                            />
+
+                        <ImageView
+                            android:id="@+id/viewtwitter"
+                            android:layout_width="50dp"
+                            android:visibility="gone"
+                            android:layout_toRightOf="@+id/viewinstagram"
+                            android:layout_marginLeft="4dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/twitter" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

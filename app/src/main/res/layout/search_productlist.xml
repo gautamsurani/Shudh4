@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rect"
+    android:layout_marginLeft="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/productitems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <RelativeLayout
+              android:id="@+id/relSearchlayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingTop="5dp">
+
+              <TextView
+                  android:id="@+id/productSearchtitle"
+                  android:maxLines="2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text=""
+                  android:textSize="15dp"
+                  android:paddingBottom="10dp"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="5dp"
+
+                  android:layout_marginLeft="16dp"
+                  android:textColor="@color/droverbackground" />
+
+            <TextView
+                android:id="@+id/productLISTSearchtitle"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="in Categories"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:textStyle="italic"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_toRightOf="@+id/productSearchtitle"
+                android:textColor="@color/droverbackground" />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/boticon"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="16dp"
+           />
+
+</LinearLayout>
+</LinearLayout>

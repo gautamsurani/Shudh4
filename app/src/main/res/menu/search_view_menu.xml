@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Activity.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/newsearch"
+        android:title="Search" />
+    <item
+        android:id="@+id/action_cart"
+        app:showAsAction="always"
+        android:icon="@drawable/newcart"
+        android:title="Cart" />
+</menu>

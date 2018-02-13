@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#39943d</color>
+    <color name="colorAccent">#4caf50</color>
+    <color name="colorLightPrimary">#C8E6C9</color>
+    <color name="colorText">#404547</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="global_color_green_primary">#4caf50</color>
+
+    <color name="boticon">#999ba4ab</color>
+    <color name="red">#ea495f</color>
+    <color name="green">#5ccc78</color>
+    <color name="strok">#e4e5ea</color>
+
+    <color name="cattextcolour">#FFFFFF</color>
+    <color name="category_textcolour">#404547</color>
+    <color name="divider">#677174</color>
+    <color name="droverbackground">#29363b</color>
+    <color name="droverbackground1">#354348</color>
+    <color name="grey_bg">#E6E6E6</color>
+    <color name="grey_dark">#262626</color>
+    <color name="darkOverlaySoft">#40000000</color>
+    <color name="whiteOverlay">#40FFFFFF</color>
+    <color name="colordevider">#f1f2f4</color>
+    <color name="Tex">#404547</color>
+    <color name="grey_hard">#96989A</color>
+    <color name="textSub">#76818a</color>
+    <color name="text_color_order">#838b98</color>
+    <color name="text_view_items">#4f65b3</color>
+    <color name="text_bg_order">#f2f3f4</color>
+    <color name="grey_soft">#F5F5F5</color>
+    <color name="subcatsearch">#1E88E5</color>
+    <color name="accountcolor">#a6a6a6</color>
+    <color name="myacc">#7e7e7f</color>
+    <color name="colorhint">#a9aaac</color>
+    <color name="cart_bg">#f8f8f8</color>
+    <color name="parent_color">#212121</color>
+    <color name="child_color">#7d7d7d</color>
+    <color name="dropdown_bg">#4a4a4a</color>
+    <color name="pushcolor">#296cab</color>
+    <color name="tabnotselect">#E0E0E0</color>
+    <color name="intro_bg">#9dcd17</color>
+    <color name="intro_bg_old">#8BC34A</color>
+
+    <color name="gmail_bg">#D6463B</color>
+</resources>

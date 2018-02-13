@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeMain">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgUpdateimage"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            app:civ_border_color="#ccc"
+                            android:src="@drawable/pic"
+                            app:civ_border_width="2dp" />
+
+
+                        <ImageView
+                            android:id="@+id/imgChangeImage"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_camera"
+                            android:layout_alignBottom="@+id/imgUpdateimage"
+                            android:layout_alignRight="@+id/imgUpdateimage"
+                            android:layout_alignEnd="@+id/imgUpdateimage">
+
+                        </ImageView>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/etUname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:maxLines="1"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1">
+                </EditText>
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+
+
+
+                <EditText
+                    android:id="@+id/etUemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Email address"
+                    android:editable="false"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1">
+                </EditText>
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/etUphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Phone"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    >
+
+                </EditText>
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+
+                <EditText
+                    android:id="@+id/etUAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Address"
+
+                    android:inputType="none"
+                    android:singleLine="true"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    >
+
+                </EditText>
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+                <!--android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Pincode"
+                android:drawableRight="@drawable/downarrow"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:overlapAnchor="false"
+                android:textColor="@color/Tex"
+                android:textColorHint="@color/colorhint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1">
+-->
+                <TextView
+                    android:id="@+id/etUArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:background="@android:color/transparent"
+                    android:hint="Area"
+                    android:drawableRight="@drawable/downarrow"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:overlapAnchor="false"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1">
+                    >
+                </TextView>
+
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="10"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/etUPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_xxlarge"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:hint="Pincode"
+                            android:drawableRight="@drawable/downarrow"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            android:overlapAnchor="false"
+                            android:textColor="@color/Tex"
+                            android:textColorHint="@color/colorhint"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1">
+
+                        </TextView>
+                        <View
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/etUCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_xxlarge"
+                            android:background="@android:color/transparent"
+                            android:hint="City"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            android:textColor="@color/Tex"
+                            android:textColorHint="@color/colorhint"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            >
+
+                        </EditText>
+                        <View
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etUWhatsappnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Whatsapp number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    >
+
+                </EditText>
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tvdob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:background="@android:color/transparent"
+                    android:hint="Birth Date"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1">>
+                </TextView>
+
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+
+                <TextView
+                    android:id="@+id/tvdoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:background="@android:color/transparent"
+                    android:hint="Marriage Anniversary"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/Tex"
+                    android:textColorHint="@color/colorhint"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1">>
+                </TextView>
+
+                <View
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_margin="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/btnUpdateData"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

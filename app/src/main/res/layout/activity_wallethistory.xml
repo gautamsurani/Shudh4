@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/relativeMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/imgReferfriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/relviewmoney"
+                android:layout_width="match_parent"
+                android:background="@color/grey_bg"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/wallet"
+                        android:src="@drawable/wallet_icon"
+                        android:layout_width="32dp"
+                        android:tint="@color/textSub"
+                        android:layout_height="32dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_toEndOf="@+id/wallet"
+                        android:layout_toRightOf="@+id/wallet"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textSize="15dp"
+                            android:textColor="@color/textSub"
+                            android:text="Wallet Balance"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvAvailablebal"
+                            android:textSize="17dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text=""
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_wallet_bg">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textSize="21dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Available Balance"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:id="@+id/hrels"
+                    android:alpha="0.5"
+                    android:background="@color/accountcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                </RelativeLayout>
+
+
+
+
+
+
+            <View
+                android:id="@+id/viewview"
+                android:layout_width="match_parent"
+                android:background="@color/grey_bg"
+                android:layout_below="@+id/relviewmoney"
+                android:layout_height="1dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/viewview"
+                android:id="@+id/rvWalletHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/progressBar1"
+                android:background="@color/cattextcolour" />
+
+            <TextView
+                android:id="@+id/tvAddmoney"
+                android:layout_width="wrap_content"
+                android:text="ADD MONEY"
+                android:padding="6dp"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:background="@drawable/rounded_corner_add_wallet"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/relviewmoney"
+                android:layout_marginBottom="-16dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lyt_not_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_not_found" />
+
+                <TextView
+                    android:id="@+id/noooderss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Transaction Found"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+
+            </LinearLayout>
+            <ProgressBar
+
+                android:id="@+id/progressBar1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/circular_progress"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

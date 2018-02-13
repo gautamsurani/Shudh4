@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cattextcolour"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/linearUserDetail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@color/droverbackground"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myroundimage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/pic"></de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/myroundimage"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUserNameHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="Shudh4sure"
+                android:textColor="@color/cattextcolour"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtUserMobileHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+
+                android:text="+91-9568787877"
+                android:textColor="@color/cattextcolour"
+                android:textSize="15dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_right"
+            android:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cattextcolour"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lenearHeaderHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_home"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mainCAT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_category" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_Categories"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvLastChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_myaccount" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_lastchoice"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvOffers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_offer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_offers"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/lvmywallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_bank" />
+
+            <TextView
+                android:id="@+id/nav_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_mywallet"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvmywishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_mywishlist" />
+
+            <TextView
+                android:id="@+id/nav_wishlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_mywishlist"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvOrderhistroy"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_orderhistory" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_orderhistory"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvreferearn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_refer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_refer"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvSabzilanafeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_offer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_feed"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/lvContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_help" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_contactus"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvhelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_contactus" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_help"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_feedback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_feedback"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvrateus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_rate" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_rate"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lvAboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_about" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_aboutus"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey_bg" />
+
+        <LinearLayout
+            android:id="@+id/lvlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/menu_layouttopmargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:src="@drawable/ic_logout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/menu_textpading"
+                android:layout_weight="1"
+                android:text="@string/menu_logout"
+                android:textColor="@color/category_textcolour"
+                android:textSize="@dimen/side_drawer_text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

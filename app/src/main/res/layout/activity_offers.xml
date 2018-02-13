@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:id="@+id/relativeMain"
+   >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relProductlist"
+        android:layout_width="match_parent"
+
+        android:background="@color/cattextcolour"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOfferlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/cattextcolour"
+            android:paddingRight="5dp"
+            android:elevation="5dp"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/circular_progress"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

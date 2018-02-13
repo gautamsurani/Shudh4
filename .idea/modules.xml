@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomBrowser-release/CustomBrowser-release.iml" filepath="$PROJECT_DIR$/CustomBrowser-release/CustomBrowser-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Grocery.iml" filepath="$PROJECT_DIR$/Grocery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PayU-release/PayU-release.iml" filepath="$PROJECT_DIR$/PayU-release/PayU-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkui/sdkui.iml" filepath="$PROJECT_DIR$/sdkui/sdkui.iml" />
+    </modules>
+  </component>
+</project>

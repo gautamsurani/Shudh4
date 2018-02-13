@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:behavior_peekHeight="200dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SORT BY"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textView" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_above="@+id/activity_cart_item_llTotalPrices"
+            android:layout_marginTop="10dp"
+            android:background="@color/boticon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+
+                    android:id="@+id/rblowtohigh"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="   Price - Low to High"
+                    android:layout_centerVertical="true"
+                    />
+                <RadioButton
+
+                    android:id="@+id/rbhightolow"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="   Price - High to Low"
+                    android:layout_centerVertical="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbnameatoz"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="   Name - A to Z"
+                    android:layout_centerVertical="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbnameztoa"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="   Name - Z to A"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerVertical="true"
+                    />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

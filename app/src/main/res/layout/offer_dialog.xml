@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent">
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/offerIMG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:gravity="center"
+                        android:src="@drawable/ic_default_notification"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/offerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="#000"
+                        android:textSize="13dp" />
+
+
+                    <TextView
+                        android:id="@+id/offerDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                      android:layout_marginStart="9dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:maxLines="2"
+                        android:lines="2"
+                      android:paddingRight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#000"
+                        android:textSize="12dp" />
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tvRateus"
+                            android:text="RATE US"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/discountbg"
+                            android:layout_width="0dp"
+                            android:layout_weight="3.1"
+                            android:layout_height="45dp" />
+                        <View
+                            android:layout_marginRight="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="1dp"
+                            android:layout_height="33dp"
+                            android:background="#fff"
+                            />
+                        <TextView
+                            android:id="@+id/tvFeedback"
+                            android:text="FEEDBACK"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/discountbg"
+                            android:layout_width="0dp"
+                            android:layout_weight="3.33"
+                            android:layout_height="45dp" />
+                        <View
+                            android:layout_marginRight="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="1dp"
+                            android:layout_height="33dp"
+                            android:background="#fff"
+                            />
+                        <TextView
+                            android:id="@+id/tvBacktomyOrders"
+                            android:text="MY ORDERS"
+                            android:padding="8dp"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/discountbg"
+                            android:layout_width="0dp"
+                            android:layout_weight="3.56"
+                            android:layout_height="45dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:id="@+id/icon_close"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:tint="@color/black"
+            android:layout_gravity="top|end"
+            android:src="@drawable/cancel" />
+    </FrameLayout>
+</FrameLayout>

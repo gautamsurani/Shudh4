@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relSelect"
+            android:orientation="horizontal"
+            android:weightSum="10"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:id="@+id/tvHeadername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Timeslot"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="#FFF"
+                android:textSize="@dimen/side_drawer_text" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:src="@drawable/ic_white_close"
+                android:layout_height="25dp" />
+           </RelativeLayout>
+
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/rvSelectTimeslot"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lyt_other_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tvOtherArea"
+                android:layout_gravity="center_horizontal|bottom" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lyt_not_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+       >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_not_found" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Record Not Found"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:id="@+id/btngoback"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

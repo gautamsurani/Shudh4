@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+      <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relbasicdetail"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgMyUpdateimage"
+                    android:layout_width="65dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/pic"
+                    android:layout_alignParentTop="true">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/tvMyuname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@+id/imgMyUpdateimage"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvMyuphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgMyUpdateimage"
+                    android:layout_below="@+id/tvMyuname"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/accountcolor"
+                    android:textSize="16sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/relchangeinfo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/btnLogout"
+                    android:layout_gravity="center_horizontal|bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relchangeinfo"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_height="match_parent"
+
+                android:layout_below="@+id/relbasicdetail"
+                android:layout_alignLeft="@+id/relbasicdetail"
+                android:layout_alignRight="@+id/relbasicdetail">
+
+
+                <LinearLayout
+                    android:id="@+id/liMyprofile"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_usericon"
+                        android:id="@+id/imageView6" />
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/side_drawer_text"
+                        />
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewliMyprofile"
+                    android:layout_below="@+id/liMyprofile"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/liMyOrders"
+                    android:layout_below="@+id/viewliMyprofile"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_orderlist" />
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Orders"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/side_drawer_text" />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+                </LinearLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/viewliMyInquiry"
+                    android:layout_below="@+id/liMyOrders"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/liMyWallet"
+                    android:layout_below="@+id/viewliMyInquiry"
+                    android:weightSum="10"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_mywallets" />
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Wallet"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/side_drawer_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/viewliChangepwd"
+                    android:layout_below="@+id/liMyWallet"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+
+                    android:layout_height="1dp"/>
+
+
+                <LinearLayout
+
+                    android:id="@+id/liWalletHistory"
+                    android:layout_below="@+id/viewliChangepwd"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_wallethistory" />
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet History"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/side_drawer_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/viewlideactivie"
+                    android:layout_below="@+id/liWalletHistory"
+                    android:layout_width="match_parent"
+                    android:background="@color/strok"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:id="@+id/liChangepwd"
+                    android:layout_below="@+id/viewlideactivie"
+                    android:weightSum="10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_changepassword" />
+
+                    <TextView
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/myacc"
+                        android:textSize="@dimen/side_drawer_text"
+                        />
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ac_right" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

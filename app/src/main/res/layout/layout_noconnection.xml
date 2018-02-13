@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvnewproducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="@string/nourlconnection"
+        android:textColor="@color/Tex"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvnewproducts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_neticon" />
+
+    <Button
+        android:id="@+id/btnRetryinternet"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvncmsg"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/nctry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/Tex"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tvncmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView7"
+        android:gravity="center_horizontal"
+        android:text="@string/conref"
+        android:textColor="@color/Tex"
+        android:textSize="16dp" />
+</RelativeLayout>

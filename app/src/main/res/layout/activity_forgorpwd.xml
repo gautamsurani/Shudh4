@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeMain">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@+id/lvFacebooklogin"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/get_logo" />
+            </LinearLayout>
+
+
+            <com.shudh4sure.shopping.utils.MyTextView
+                android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:text="Enter the e-mail / phone associated with your account to get password."
+                android:textColor="#111"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_above="@+id/tvSignup"
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/newpassword"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorhint"
+                    android:textColor="@color/droverbackground">
+
+                    <EditText
+                        android:id="@+id/etforgotemailphone"
+                        android:textSize="@dimen/side_drawer_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email / Phone"
+                        android:layout_marginLeft="46dp"
+                        android:layout_marginRight="46dp"
+                        android:textColorHint="@color/textSub"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+                        android:padding="10dp"
+                        android:gravity="left"
+                        android:lines="1"
+                        android:drawableLeft="@drawable/user"
+                        android:drawablePadding="12dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="56dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+
+                <LinearLayout
+
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/lvTermsCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+
+                    >
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="50dp"
+                        >
+                        <CheckBox
+                            android:id="@+id/checkbocremember"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:visibility="gone"
+                            android:buttonTint="@color/textSub"
+
+                            />
+                        <TextView
+
+                            android:id="@+id/remember"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remember password?"
+                            android:visibility="gone"
+                            android:textColor="@color/textSub"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/textsub"
+
+                            /></LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_above="@+id/lvContactUs"
+                android:id="@+id/tvSubmitnewpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect1"
+                android:text="Submit"
+                android:textSize="@dimen/side_drawer_text"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:padding="12dp"
+                android:layout_marginTop="6dp"
+                android:elevation="1.5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+

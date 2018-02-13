@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="?attr/actionBarSize"
+    android:id="@+id/toolbar"
+    app:contentInsetEnd="0dp"
+    app:contentInsetEndWithActions="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    android:background="@color/colorPrimary"
+    app:contentInsetStart="0dp"
+    app:contentInsetStartWithNavigation="0dp"
+    android:layout_margin="0dp"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/toolbartitle"
+            android:layout_width="0dp"
+            android:layout_weight="8.2"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:gravity="left|center_vertical"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSearchProduct"
+            android:layout_toRightOf="@+id/eshop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search_toolbar"
+           android:tint="@color/cattextcolour"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+              />
+        <RelativeLayout
+            android:id="@+id/relMyCart"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bagnumberbg"
+
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/cattextcolour"
+                android:id="@+id/tvmytotalitems"/>
+
+            <ImageView
+                android:id="@+id/imgCartProduct"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/newcart"
+                android:padding="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

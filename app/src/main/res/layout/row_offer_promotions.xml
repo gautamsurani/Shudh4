@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:id="@+id/image"
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffff">
+
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:id="@+id/imgofferimg"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/tvOfferlines"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_below="@+id/image"
+                android:layout_width="match_parent"
+                android:text="@string/app_name"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/tvOfferlines"
+                android:gravity="end"
+                android:id="@+id/tvOfferDates"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="6dp"
+                android:textSize="11dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/lvBuynow"
+                android:layout_below="@+id/tvOfferDates"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:text="Buy Now"
+                    android:textColor="@color/cattextcolour"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/btnofferBuynow" />
+
+                <TextView
+                    android:gravity="end|center_vertical"
+                    android:id="@+id/tvOfferShare"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/droverbackground"
+                    android:layout_width="match_parent"
+                    android:text="SHARE"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

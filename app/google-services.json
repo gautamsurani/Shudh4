@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "513328686290",
+    "firebase_url": "https://shudh4sure-com.firebaseio.com",
+    "project_id": "shudh4sure-com",
+    "storage_bucket": "shudh4sure-com.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513328686290:android:fe37a37e775c628b",
+        "android_client_info": {
+          "package_name": "com.shudh4sure.shopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513328686290-sraj7nsp4kgg89d4i56lr9jg8k52qob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSDjFPac_iYzLRAaWEqlyYfm1Vj3kkWrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

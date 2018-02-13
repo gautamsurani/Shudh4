@@ -1,0 +1,6 @@
+configurations.create("default")
+artifacts.add("default", file('CustomBrowser-release.aar'))
+dependencies
+        {
+                
+        }

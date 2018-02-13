@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lvTrackOrder"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/text_bg_order"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvOrderId"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/droverbackground"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tvOrderDetails"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Details"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/droverbackground"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_bg_order" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:text="Status"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_color_order"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvOrderStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+
+                    android:gravity="start"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/droverbackground"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@color/text_bg_order" />
+
+            <LinearLayout
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:text="Shipping Date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_color_order"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvOrderShippingdate"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+
+                    android:gravity="start"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/droverbackground"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@color/text_bg_order" />
+
+            <LinearLayout
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:text="Order Amount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_color_order"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvOrderAmount"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/droverbackground"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/containtoolbar"
+        android:layout_width="match_parent"
+        android:background="#4CAF50"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/backfrompayment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_backwhite"
+            android:padding="6dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Payment"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/backfrompayment"
+            android:layout_centerVertical="true"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/containtoolbar"
+        android:layout_height="match_parent"
+
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/header_container"
+            android:gravity="center"
+            android:background="#E6E6E6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <TextView
+            android:id="@+id/textview_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#302F2F"
+            android:textSize="30sp"
+            android:text="Amount"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textview_txnid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#302F2F"
+            android:textSize="15sp"
+            android:text="Txnid"
+            android:layout_below="@id/textview_amount"
+            android:gravity="center"/>
+        </LinearLayout>
+
+
+        <com.payu.payuui.Widget.SwipeTab.SlidingTabLayout
+            android:layout_below="@id/header_container"
+           android:id="@+id/sliding_tab_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           />
+
+
+       <android.support.v4.view.ViewPager
+           android:layout_above="@+id/button_pay_now"
+           android:layout_below="@id/sliding_tab_layout"
+           android:id="@+id/pager"
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"
+
+           />
+
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="PAY NOW"
+            android:id="@+id/button_pay_now"
+            android:enabled="false"
+            android:background="@drawable/bttn_grey_disabled"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+     <!-- /ScrollView -->
+</RelativeLayout>

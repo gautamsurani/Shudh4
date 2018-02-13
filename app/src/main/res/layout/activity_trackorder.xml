@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:weightSum="10"
+                                android:layout_height="match_parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="5"
+                                    android:layout_height="0dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="1dp"
+                                            android:background="@color/boticon"
+                                            android:layout_height="match_parent" />
+
+                                        <ImageView
+                                            android:src="@drawable/ic_bluedot"
+                                            android:layout_width="10dp"
+                                            android:layout_height="8dp"
+
+                                            android:layout_centerVertical="true"
+                                            android:layout_centerHorizontal="true" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="5"
+                                    android:layout_height="0dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_width="1dp"
+                                            android:background="@color/boticon"
+                                            android:layout_height="match_parent" />
+
+                                        <ImageView
+                                            android:src="@drawable/ic_reddot"
+                                            android:layout_width="10dp"
+                                            android:layout_height="8dp"
+
+                                            android:layout_centerVertical="true"
+                                            android:layout_centerHorizontal="true" />
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Order Delivery Date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+
+                                    android:layout_marginTop="8dp"
+
+                                    android:textColor="@color/droverbackground1"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/tvOrderDetailDelDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="13dp"
+                                    android:textColor="@color/darkOverlaySoft"
+                                    android:textSize="10dp"
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="1dp"
+                                    android:text="Order Date"
+                                    android:layout_marginTop="8dp"
+
+                                    android:textColor="@color/droverbackground1"
+                                    android:textSize="12dp" />
+
+                                <TextView
+                                    android:id="@+id/tvOrderDetailDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="13dp"
+                                    android:textColor="@color/darkOverlaySoft"
+                                    android:textSize="10dp" />
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="4dp"
+                                android:text="Order Status"
+                                android:textColor="@color/darkOverlaySoft"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/tvOrderDetailStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="4dp"
+
+                                android:textColor="@color/green"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/darkOverlaySoft" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="4dp"
+                                android:text="Order Amount"
+                                android:textColor="@color/darkOverlaySoft"
+                                android:textSize="13dp" />
+
+                            <TextView
+                                android:id="@+id/tvOrderDetailAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/droverbackground1"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="4.5"
+                            android:text="Payment Method"
+                            android:textColor="@color/darkOverlaySoft"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderDetailPayment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="5.5"
+
+                            android:textColor="@color/droverbackground1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="4.5"
+                            android:text="Pay value"
+                            android:textColor="@color/darkOverlaySoft"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderDetailPayvalue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="5.5"
+
+                            android:textColor="@color/droverbackground1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="4.5"
+                            android:text="Wallet value"
+                            android:textColor="@color/darkOverlaySoft"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderDetailWalletvalue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="5.5"
+
+                            android:textColor="@color/droverbackground1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="4.5"
+                            android:text="Quantity"
+                            android:textColor="@color/darkOverlaySoft"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderDetailQuantity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="3"
+
+                            android:textColor="@color/droverbackground1"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvViewOrderItems"
+                            android:padding="2dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="2.5"
+                            android:gravity="end"
+                            android:text="View Items"
+                            android:textColor="@color/text_view_items"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="4.5"
+                            android:text="Shipping Address"
+                            android:textColor="@color/darkOverlaySoft"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/tvOrderDetailAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="5.5"
+                            android:lines="3"
+                            android:textColor="@color/droverbackground1"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/darkOverlaySoft" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/botbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.9"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/btnPlaceorder"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Track your Order on Map"
+                android:textSize="13dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/cattextcolour" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Grocery</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Rs">\u20B9</string>
+    <string name="slide_1_title">CHOOSE YOUR ITEM</string>
+    <string name="slide_1_desc">Find the right type of products \n most suited to your needs </string>
+    <string name="slide_2_title">CHOOSE DELIVERY SLOT</string>
+    <string name="slide_2_desc">As per your plan choose delivery slot \n and get express delivery</string>
+    <string name="slide_3_title">GET DELIVERY</string>
+    <string name="slide_3_desc">Delivered fresh right in same day \n or sheduled delivery</string>
+
+    <string name="address">C-408 Siddhivinayak Tower,\n Beside Kataria Arcade,\n S.G. Highway,\n Makarba, Ahmedabad,\n Gujarat 380051</string>
+    <string name="slide_1_text">Washing</string>
+    <string name="slide_2_text">Assorting</string>
+    <string name="slide_3_text">Hygenic Packing</string>
+    <string name="slide_4_text">Accurate Weight</string>
+    <string name="slide_5_text">Home delivery</string>
+    <string name="slide_6_text">NQARP</string>
+    <string name="slide_6_text_second">(No Question Ask Return Policy)</string>
+
+
+    <string name="slide_1_details">Find the complete washed and almost equivalent to organic veggies</string>
+    <string name="slide_2_details">Untouched assorting and quality control by experienced team</string>
+    <string name="slide_3_details">Hygienic packing in non woven bags and food grade cling rolls</string>
+    <string name="slide_4_details">To get accurate weight is the prime right of our customer weight is \n our priority</string>
+    <string name="slide_5_details">All corner delivery in Nagpur at your suitable delivery slot</string>
+    <string name="slide_6_details">If you are not satisfied, you may return it on the time of delivery</string>
+
+
+    <!--SideBar menu title -->
+
+    <string name="menu_home">Home</string>
+    <string name="menu_Categories">Categories</string>
+    <string name="menu_lastchoice">Your Last Choice</string>
+    <string name="menu_offers">Offers &amp; Promotions</string>
+    <string name="menu_mywallet">My Wallet</string>
+    <string name="menu_mywishlist">My Wishlist</string>
+    <string name="menu_orderhistory">Order History</string>
+    <string name="menu_refer">Refer &amp; Earn</string>
+    <string name="menu_feed">News</string>
+    <string name="menu_help">Help Center</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_rate">Rate Us</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="menu_contactus">Contact Us</string>
+
+    <!--Toolbar titles -->
+    <string name="toolbar_aboutus">About Us</string>
+    <string name="toolbar_deladdress">Delivery Address</string>
+    <string name="toolbar_paymnetoption">Payment Options</string>
+    <string name="toolbar_myaccount">My Account</string>
+    <string name="toolbar_updateprofile">Update Profile</string>
+    <string name="toolbar_addmoney">Add Money</string>
+    <string name="toolbar_payment">Payment</string>
+    <string name="toolbar_wallethistory">Wallet History</string>
+    <string name="toolbar_orderhistory">Order History</string>
+    <string name="toolbar_orderstatus">Order Status</string>
+    <string name="toolbar_refer">Refer</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_feedback">Feedback</string>
+    <string name="toolbar_offers">Offers &amp; Promotions</string>
+    <string name="toolbar_category">Categories</string>
+    <string name="toolbar_cart">My Cart</string>
+    <string name="toolbar_wishlist">My Wishlist</string>
+    <string name="toolbar_contactus">Contact Us</string>
+    <string name="toolbar_view_items">My Order</string>
+    <string name="toolbar_change_password">Change Password</string>
+    <string name="toolbar_change_address">Change Address</string>
+    <string name="toolbar_feed">Shudh4sure Feed</string>
+    <string name="signup"><b><u>Sign up Now</u></b></string>
+    <string name="tandc"><u>terms &amp; conditions</u></string>
+    <string name="nonetwork">No internet availbale</string>
+    <string name="connectionRefused">try again!</string>
+    <string name="signin"><u><b>Sign in</b></u></string>
+    <string name="otp_line">We have sent you access code Via SMS for \n mobile number verification</string>
+
+    <string name="refer_line">Both you and your friend get \n referral bonus on friends first Order. \n Pro tip: Share in Whatsapp groups for \n better results</string>
+    <string name="nourlconnection">Connection Refused</string>
+    <string name="noconnection">No Connection</string>
+    <string name="ncmsg">Seems like there is a problem with \n your internet connection</string>
+    <string name="conref">Seems like there is a problem with \n your server connection</string>
+
+    <string name="nctry">Try Again</string>
+
+    <string name="other_are">Note: If your area is not in mention list, than please select OTHER area.</string>
+    <string name="nocategory">No Category Found</string>
+
+
+    <!--money options -->
+    <string name="amount_100">+ \u20B9 100</string>
+    <string name="amount_200">+ \u20B9 200</string>
+    <string name="amount_500">+ \u20B9 500</string>
+    <string name="amount_1000">+ \u20B9 1000</string>
+    <string name="add_money_from">Add money from</string>
+    <string name="empty_basket">Empty Basket</string>
+    <string name="failexp">Ooh no!</string>
+    <string name="failordermsg">Unfortunately we have an issue with your payment, try again.</string>
+    <string name="failorderback">Return To Add Money</string>
+    <string name="failmyorder">Back To My Orders</string>
+
+    <string name="walletexp">Awesome, Its Done !</string>
+    <string name="walletmsg">Amount will be credited in your wallet.</string>
+    <string name="walletback">Wallet History</string>
+    <string name="string_nointernet">No internet availbale</string>
+    <string name="string_plzwait">Please wait…</string>
+    <string name="continue_shopping">CONTINUE SHOPPING</string>
+    <string name="successexp">Payment successful</string>
+    <string name="successordermsg">Your paymnet has been processed.</string>
+    <string name="successorderback">My Order List</string>
+    <string name="facebook_id">1995055534115870</string>
+    <string name="signwithfb">Sign in with Facebook</string>
+</resources>
